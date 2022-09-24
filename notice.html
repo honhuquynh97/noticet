@@ -1,536 +1,591 @@
 <!DOCTYPE html>
+
 <head>
-<title> Notice </title>
-<style>
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+	<title> Notice </title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
 
-.flex {
-	display: flex;
-}
-.left-page {
-	background-color: #212529;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 223px;
-	z-index: 2;
-}
-.logo-left-page {
-	color: #fff;
-	font-size: 18px;
-	margin-left: 18px;
-	margin-top: 20px;
-}
-.core {
-	color: #595c5f;
-	font-size: 12px;
-	margin-left: 14px;
-	margin-top: 54px;
-	font-weight: bold;
-}
-.dash-board {
-	color: #595c5f;
-	font-size: 15px;
-	margin-left: 12px;
-	margin-top: 37px;
-}
-.icon1 {
-	width: 15px;
-	height: 15px;
-	margin-left: 16px;
-	margin-top: 37px;
-}
-.icon2 {
-	width: 8px;
-	height: 13px;
-	margin-left: 100px;
-	margin-top: 37px;
-}
-.icon3 {
-	width: 8px;
-	height: 13px;
-	margin-left: 110px;
-	margin-top: 37px;
-}
-	
-.aspan {
-	color: white;
-	text-decoration: none;
-}
-.interface {
-	color: #595c5f;
-	font-size: 12px;
-	margin-left: 14px;
-	margin-top: 50px;
-	font-weight: bold;
-}
-.lay-out {
-	color: #595c5f;
-	font-size: 15px;
-	margin-left: 12px;
-	margin-top: 37px;
-}
-.pages {
-	color: #595c5f;
-	font-size: 15px;
-	margin-left: 12px;
-	margin-top: 37px;
-}
-.addons {
-	color: #595c5f;
-	font-size: 12px;
-	margin-left: 14px;
-	margin-top: 49px;
-	font-weight: bold;
-}
-.charts {
-	color: #595c5f;
-	font-size: 15px;
-	margin-left: 12px;
-	margin-top: 35px;
-}
-.tables {
-	color: #595c5f;
-	font-size: 15px;
-	margin-left: 12px;
-	margin-top: 35px;
-}
-.head-bar1 {
-	background-color: #212529;
-	height: 56px;
-	position: fixed;
-	left: 0;
-	right: 0;
-	display: flex;
-	z-index: 1;
-	padding-left: 224px;
-	justify-content: space-between;
-}
-.head-bar1-left {
-	background-color: none;
-}
-.icon-list {
-	margin-top: 20px;
-	height: 20px;
-	font-size: 20px;	
-	color: white;
-	opacity: 0.5;
-}
-.head-bar1-right {
-	background-color: blue;
-}
-.relative {
-	position: relative;
-}
-.form-control {
-	display: inline-block;
-	border: 1px solid grey;
-	width: 208px;
-	height: 37px;
-	text-align: auto;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	color: grey;
-	outline: none;
-	font-size: 15px;
-	margin-top: 10px;
-	padding-left: 5px;
-}
-.buttonsearch {
-	background-color: dodgerblue;
-	top: 0;
-	bottom: 0;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border: 1px solid dodgerblue;
-	height: 37px;
-	width: 43px;
-	margin-top: 10px;
-}
-.icon-head-bar1 {
-	display: inline-block;
-	height: 18px;
-	color: white;
-	width: 19px;
-	background-color: dodgerblue;
+		.flex {
+			display: flex;
+		}
 
-}
-.flex-container {
-	display: flex;
-}
-.icon-profile {
-	display: inline-block;
-	margin-top: 19px;
-	height: 20px;
-	left: 0px;
-	width: auto;
-	margin-right: 5px;
-}
-.tamgiac {
-	display: inline-block;
-	height: 9px;
-	weight: auto;
-	margin-left: 6px;
-	margin-right: 30px;
-	margin-top: 24px;
-}
-.title {
-	display: inline-block;
-	margin-top: 95px;
-	margin-left: 246px;
-	font-size: 40px;
-	color: #0f100e;
-}
-.board-table {
-	
-	margin-left: 246px;
-	margin-top: 25px;
-	
-}
-.table3 {
-	display: inline-block;
-	color: grey;
-	margin-top: 25px
-}
-.border {
-	border: 1px solid #ededed;
-	display: block;
-	margin: auto;
-	border-radius: 5px;
-	height: 60px;
-	width: 1645px;
-	color: #404146;
-	font-size: 15px;
-	margin-top: 41px;
-	margin-left: 246px;
-	padding: 21px 20px;
-}
-.table4 {
-	display: inline-block;
-	color: #1e90ff;
-}
-.datatable-example {
-	border: 1px solid #ededed;
-	margin: auto;
-	border-radius: 5px;
-	height: 602px;
-	width: 1645px;
-	margin-top: 27px;
-	margin-left: 246px;
-}
-.head-table {
-	border-bottom: 1px solid #ededed;
-	background-color: #f7f7f7;
-	height: 44px;
-	color: black;
-	font-size: 15px;
-	padding: 15px 11px;
-	padding-left: 11px;
-	
-}
- .icon-table {
-	height: 17px;
-	width: 14px;
-	margin-left: 17px;
-	margin-right: 10px;
- }
- .order-box {
-	 border: 1px solid #aeaeb0;
-	 height: 37px;
-	 width: 71px;
-	 color: black;
-	 font-size: 15px;
-	 margin-left: 19px;
-	 border-radius: 5px;
-	 padding: 10px;
-	 margin-top: 16px;
-	 justify-content: space-arrow;
- }
- .icon-arrow {
-	height: 17px;
-	width: 14px;
-	margin-left: 8px;
-	padding: 8px;
- }
- .text-entries {
-	 margin-left: 10px;
-	 color: black;
-	 font-size: 16px;
-	 margin-top: 16px;
-	 
- }
- .align-item {
-	 align-items: center;
- }
- .searchbox {
-	 width: 207px;
-	 height: 37px;
-	 margin-left: auto;
-	 margin-right: 17px;
-	 border: 1px solid #aeaeb0;
-	 font-size: 15px;
-	 color: black;
-	 border-radius: 5px;
-	 outline: none;
-	 padding: 15px;
-	 margin-top: 16px;
- }
- .tableboard {
-	 border-collapse: collapse;
-	 width: 98%;
-	 border: 1px solid #ededed;
-	 padding: 8px;
-	 margin-left: 19px;
-	 margin-top: 19px;
-}
- .tableboard th {
-	 padding-top: 12px;
-	 padding-bottom: 12px;
-	 text-align: left;
-	 background-color: white;
-	 border: 1px solid #ededed;
-	 border-bottom: 2px solid black;
-	 padding: 8px;
-	 font-weight: bold;
- }
- .tableboard td {
-	 padding-top: 12px;
-	 padding-bottom: 12px;
-	 text-align: left;
-	 border: 1px solid #ededed;
-	 padding: 8px;
-	 color: #404146;
- }
- .textfinal {
-	 margin-top: 32px;
-	 margin-left: 19px;
-	 color: black;
-	 padding: 8px;
- }
- .pagination {
-	 display: inline-block;
-	 margin-left: auto;
-	 margin-right: 17px;
- }
- .pagination a {
-	 color: dodgerblue;
-	 padding: 8px 12px;
-	 text-decoration: none;
-	 margin-left: auto;
-	 border: 1px solid #ededed;
-	 font-size: 15px;
-	 float: left;
-	 margin-top: 32px;
-	 right: auto;
- }
- .pagination a.active {
-	 background-color: dodgerblue;
-	 color: white;
-	 border: 1px solid white;
- }
- .pagination a:hover:not(.active) {
-	 background-color: white;
- }
- .pagination a:first-child {
-	 border-top-left-radius: 5px;
-	 border-bottom-left-radius: 5px;
- }
- .pagination a:last-child {
-	 border-top-right-radius: 5px;
-	 border-bottom-right-radius: 5px;
- }
- .layoutmenu {
-	 width: 214px;
-	 padding: 8px;
-	 background-color: #212529;
-	 color: #595c5f;
-	 font-size: 15px;
-	 box-sizing: border-box;
- }
-</style>
+		.left-page {
+			background-color: #212529;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 223px;
+			z-index: 2;
+		}
+
+		.logo-left-page {
+			color: #fff;
+			font-size: 18px;
+			margin-left: 18px;
+			margin-top: 20px;
+		}
+
+		.core {
+			color: #595c5f;
+			font-size: 12px;
+			margin-left: 14px;
+			margin-top: 54px;
+			font-weight: bold;
+		}
+
+		.dash-board {
+			color: #595c5f;
+			font-size: 15px;
+			margin-left: 12px;
+			margin-top: 37px;
+		}
+
+		.icon1 {
+			width: 15px;
+			height: 15px;
+			margin-left: 16px;
+			margin-top: 37px;
+		}
+
+		.icon2 {
+			width: 8px;
+			height: 13px;
+			margin-left: 100px;
+			margin-top: 37px;
+		}
+
+		.icon3 {
+			width: 8px;
+			height: 13px;
+			margin-left: 110px;
+			margin-top: 37px;
+		}
+
+		.aspan {
+			color: white;
+			text-decoration: none;
+		}
+
+		.interface {
+			color: #595c5f;
+			font-size: 12px;
+			margin-left: 14px;
+			margin-top: 50px;
+			font-weight: bold;
+		}
+
+		.lay-out {
+			color: #595c5f;
+			font-size: 15px;
+			margin-left: 12px;
+			margin-top: 37px;
+		}
+
+		.pages {
+			color: #595c5f;
+			font-size: 15px;
+			margin-left: 12px;
+			margin-top: 37px;
+		}
+
+		.addons {
+			color: #595c5f;
+			font-size: 12px;
+			margin-left: 14px;
+			margin-top: 49px;
+			font-weight: bold;
+		}
+
+		.charts {
+			color: #595c5f;
+			font-size: 15px;
+			margin-left: 12px;
+			margin-top: 35px;
+		}
+
+		.tables {
+			color: #595c5f;
+			font-size: 15px;
+			margin-left: 12px;
+			margin-top: 35px;
+		}
+
+		.head-bar1 {
+			background-color: #212529;
+			height: 56px;
+			position: fixed;
+			left: 0;
+			right: 0;
+			display: flex;
+			z-index: 1;
+			padding-left: 224px;
+			justify-content: space-between;
+		}
+
+		.head-bar1-left {
+			background-color: none;
+		}
+
+		.icon-list {
+			margin-top: 20px;
+			height: 20px;
+			font-size: 20px;
+			color: white;
+			opacity: 0.5;
+		}
+
+		.head-bar1-right {
+			background-color: blue;
+		}
+
+		.relative {
+			position: relative;
+		}
+
+		.form-control {
+			display: inline-block;
+			border: 1px solid grey;
+			width: 208px;
+			height: 37px;
+			text-align: auto;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			color: grey;
+			outline: none;
+			font-size: 15px;
+			margin-top: 10px;
+			padding-left: 5px;
+		}
+
+		.buttonsearch {
+			background-color: dodgerblue;
+			top: 0;
+			bottom: 0;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border: 1px solid dodgerblue;
+			height: 37px;
+			width: 43px;
+			margin-top: 10px;
+		}
+
+		.icon-head-bar1 {
+			display: inline-block;
+			height: 18px;
+			color: white;
+			width: 19px;
+			background-color: dodgerblue;
+
+		}
+
+		.flex-container {
+			display: flex;
+		}
+
+		.icon-profile {
+			display: inline-block;
+			margin-top: 19px;
+			height: 20px;
+			left: 0px;
+			width: auto;
+			margin-right: 5px;
+		}
+
+		.tamgiac {
+			display: inline-block;
+			height: 9px;
+			weight: auto;
+			margin-left: 6px;
+			margin-right: 30px;
+			margin-top: 24px;
+		}
+
+		.title {
+			display: inline-block;
+			margin-top: 95px;
+			margin-left: 246px;
+			font-size: 40px;
+			color: #0f100e;
+		}
+
+		.board-table {
+
+			margin-left: 246px;
+			margin-top: 25px;
+
+		}
+
+		.table3 {
+			display: inline-block;
+			color: grey;
+			margin-top: 25px
+		}
+
+		.border {
+			border: 1px solid #ededed;
+			display: block;
+			margin: auto;
+			border-radius: 5px;
+			height: 60px;
+			width: 1645px;
+			color: #404146;
+			font-size: 15px;
+			margin-top: 41px;
+			margin-left: 246px;
+			padding: 21px 20px;
+		}
+
+		.table4 {
+			display: inline-block;
+			color: #1e90ff;
+		}
+
+		.datatable-example {
+			border: 1px solid #ededed;
+			margin: auto;
+			border-radius: 5px;
+			height: 602px;
+			width: 1645px;
+			margin-top: 27px;
+			margin-left: 246px;
+		}
+
+		.head-table {
+			border-bottom: 1px solid #ededed;
+			background-color: #f7f7f7;
+			height: 44px;
+			color: black;
+			font-size: 15px;
+			padding: 15px 11px;
+			padding-left: 11px;
+
+		}
+
+		.icon-table {
+			height: 17px;
+			width: 14px;
+			margin-left: 17px;
+			margin-right: 10px;
+		}
+
+		.order-box {
+			border: 1px solid #aeaeb0;
+			height: 37px;
+			width: 71px;
+			color: black;
+			font-size: 15px;
+			margin-left: 19px;
+			border-radius: 5px;
+			padding: 10px;
+			margin-top: 16px;
+			justify-content: space-arrow;
+		}
+
+		.icon-arrow {
+			height: 17px;
+			width: 14px;
+			margin-left: 8px;
+			padding: 8px;
+		}
+
+		.text-entries {
+			margin-left: 10px;
+			color: black;
+			font-size: 16px;
+			margin-top: 16px;
+
+		}
+
+		.align-item {
+			align-items: center;
+		}
+
+		.searchbox {
+			width: 207px;
+			height: 37px;
+			margin-left: auto;
+			margin-right: 17px;
+			border: 1px solid #aeaeb0;
+			font-size: 15px;
+			color: black;
+			border-radius: 5px;
+			outline: none;
+			padding: 15px;
+			margin-top: 16px;
+		}
+
+		.tableboard {
+			border-collapse: collapse;
+			width: 98%;
+			border: 1px solid #ededed;
+			padding: 8px;
+			margin-left: 19px;
+			margin-top: 19px;
+		}
+
+		.tableboard th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: white;
+			border: 1px solid #ededed;
+			border-bottom: 2px solid black;
+			padding: 8px;
+			font-weight: bold;
+		}
+
+		.tableboard td {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			border: 1px solid #ededed;
+			padding: 8px;
+			color: #404146;
+		}
+
+		.textfinal {
+			margin-top: 32px;
+			margin-left: 19px;
+			color: black;
+			padding: 8px;
+		}
+
+		.pagination {
+			display: inline-block;
+			margin-left: auto;
+			margin-right: 17px;
+		}
+
+		.pagination a {
+			color: dodgerblue;
+			padding: 8px 12px;
+			text-decoration: none;
+			margin-left: auto;
+			border: 1px solid #ededed;
+			font-size: 15px;
+			float: left;
+			margin-top: 32px;
+			right: auto;
+		}
+
+		.pagination a.active {
+			background-color: dodgerblue;
+			color: white;
+			border: 1px solid white;
+		}
+
+		.pagination a:hover:not(.active) {
+			background-color: white;
+		}
+
+		.pagination a:first-child {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+
+		.pagination a:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		.child-memu {
+			display: none;
+		}
+		.layoutmenu {
+			display: block;
+		}
+	</style>
+	<script>
+		function pages() {
+			var element = document.getElementById("myDIV");
+			element.classList.toggle("layoutmenu");
+		}
+	</script>
 </head>
+
 <body>
-<div class="wrap">
-	<div class="left-page">
-		<div class="logo-left-page">Start Boostrap</div>
-		<div class="core">CORE </div>
-	<div class="flex-container">
-		<img src="image/dashboard.jpg" alt class="icon1">
-		<div class="dash-board"><a href="#" class="aspan">Dashboard</a></div>
+	<div class="wrap">
+		<div class="left-page">
+			<div class="logo-left-page">Start Boostrap</div>
+			<div class="core">CORE </div>
+			<div class="flex-container">
+				<img src="image/dashboard.jpg" alt class="icon1">
+				<div class="dash-board"><a href="#" class="aspan">Dashboard</a></div>
+			</div>
+			<div class="interface"> INTERFACE </div>
+			<div class="flex-container">
+				<img src="image/layout2.jpg" alt class="icon1">
+				<div class="lay-out"><a href="#" class="aspan">Layouts</a> </div>
+				<img src="image/arrow.png" alt class="icon2">
+			</div>
+			<div class="flex-container" onclick="pages()">
+				<img src="image/pages.png" alt class="icon1">
+				<div class="pages"><a href="#" class="aspan">Pages</a></div>
+				<img src="image/arrow.png" alt class="icon3">
+			</div>
+			
+			<div id="myDIV" class="child-memu">cfsfsfsfsf</div>
+			<div class="addons"> ADDONS </div>
+			<div class="flex-container">
+				<img src="image/chart.png" alt class="icon1">
+				<div class="charts"><a href="#" class="aspan">Charts</a></div>
+			</div>
+			<div class="flex-container">
+				<img src="image/tables.png" alt class="icon1">
+				<div class="tables"><a href="#" class="aspan">Tables</a></div>
+			</div>
+		</div>
 	</div>
-		<div class="interface"> INTERFACE </div>
-	<div class="flex-container">
-		<img src="image/layout2.jpg" alt class="icon1">
-		<div class="lay-out"><a href="#" class="aspan">Layouts</a> </div>
-		<img src="image/arrow.png" alt class="icon2">
-	</div>
-	<div class="flex-container">
-		<img src="image/pages.png" alt class="icon1">
-		<div class="pages"><a href="#" class="aspan">Pages</a></div>
-		<img src="image/arrow.png" alt class="icon3">
-	</div>
-		<div class="addons"> ADDONS </div>
-	<div class="flex-container">
-		<img src="image/chart.png" alt class="icon1">
-		<div class="charts"><a href="#" class="aspan">Charts</a></div>
-	</div>
-	<div class="flex-container">
-		<img src="image/tables.png" alt class="icon1">
-		<div class="tables"><a href="#" class="aspan">Tables</a></div>
-	</div>
-	</div>
-</div>
-<div class="head-bar1">
+	<div class="head-bar1">
 		<div class="head-bar1-left">
 			<img src="image/listic.jpg" alt class="icon-list">
 		</div>
 		<div class="icon-head-bar1-right">
 			<div class="flex-container">
 				<input type="text" class="form-control" placeholder="Search for...">
-				<button type="submit" class="buttonsearch"> <img src="image/icsh.png" alt class="icon-head-bar1"></button>
-				<img src="image/profile.png" alt class="icon-profile">	
+				<button type="submit" class="buttonsearch"> <img src="image/icsh.png" alt
+						class="icon-head-bar1"></button>
+				<img src="image/profile.png" alt class="icon-profile">
 				<img src="image/ictg.png" alt class="tamgiac">
 			</div>
 		</div>
-	
-</div>
-<h2 class="title"> Tables </h2>
-<br>
-<a class="board-table" href=https://pms.riansoft.net/rian_calendar.php target="_blank"> Dashboard</a> <a class="table3"> / Tables </a>
-<div class="border"> DataTable is a third party Plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a class="table4" href=https://pms.riansoft.net/rian_calendar.php> official DataTables Documentation</a></div>
-<div class="datatable-example">
-	<div class="flex-container head-table">
-		<img src="image/table.png" alt class="icon-table ">
-		<div class="text-datatables"> DataTable Example</div>	
-	</div>
-	<div class="flex-container align-item">
-		<div class="flex-container">
-			<select class="order-box"> <img src="image/downarrown.png" alt class="icon-arrow">
-				<option value selected="selected"> 10 </options>
-			</select>
-		</div>
-		<div class="text-entries"> entries per page</div>
-		<input type="text" class="searchbox" placeholder="Search...">
-	</div>
-	<table class="tableboard">
-		<div class="flex-container">
-		<tr>
-			<th class="tableboard th" style="width:19.5%">Name</th>
-			<th style="width:19.5%">Postion</th>
-			<th style="width:14.5%">Office</th>
-			<th style="width:7.5%">Age</th>
-			<th style="width:15%">Start date</th>
-			<th style="width:13%">Salary</th>
-		</tr>
-		</div>
-		<tr>
-			<td>Jackson Bradshaw</td>
-			<td>Director</td>
-			<td>New Yord</td>
-			<td>65</td>
-			<td>2008/09/26</td>
-			<td>$645,750</td>
-		</tr>
-		<tr>
-			<td>Charder Marshall</td>
-			<td>Regional Director</td>
-			<td>San Francisco</td>
-			<td>36</td>
-			<td>2008/10/16</td>
-			<td>$470,600</td>
-		</tr>
-		<tr>
-			<td>Gavin Cortez</td>
-			<td>Team Leader</td>
-			<td>San Francisco</td>
-			<td>28</td>
-			<td>2008/10/26</td>
-			<td>$235,500</td>
-		</tr>
-		<tr>
-			<td>Shad Deckter</td>
-			<td>Regional Director</td>
-			<td>Edinburgh</td>
-			<td>51</td>
-			<td>2008/11/13</td>
-			<td>$183,000</td>
-		</tr>
-		<tr>
-			<td>Airi Satou</td>
-			<td>Accountant</td>
-			<td>Tokyo</td>
-			<td>33</td>
-			<td>2008/11/28</td>
-			<td>$162,700</td>
-		</tr>
-		<tr>
-			<td>Timothy Mooney</td>
-			<td>Office Manager</td>
-			<td>London</td>
-			<td>37</td>
-			<td>2008/12/11</td>
-			<td>$136,200</td>
-		</tr>
-		<tr>
-			<td>Sonya Frost</td>
-			<td>Software Engineer</td>
-			<td>Edinburgh</td>
-			<td>23</td>
-			<td>2008/12/13</td>
-			<td>$103,600</td>
-		</tr>
-		<tr>
-			<td>Howard Hatfield</td>
-			<td>Office Manager</td>
-			<td>San Francisco</td>
-			<td>51</td>
-			<td>2008/12/16</td>
-			<td>$164,500</td>
-		</tr>
-		<tr>
-			<td>Jena Gaines</td>
-			<td>Office Manager</td>
-			<td>London</td>
-			<td>30</td>
-			<td>2008/12/19</td>
-			<td>$90,560</td>
-		</tr>
-		<tr>
-			<td>Ashton Cox</td>
-			<td>Junior Technical Author</td>
-			<td>San Francisco</td>
-			<td>66</td>
-			<td>2009/01/12</td>
-			<td>$86,000</td>
-		</tr>
 
-	</table>
-	<div class="flex-container">
-		 <div class="textfinal"> Showing 1-10 of 57 entries </div>
-		 <div class="pagination">
-			<a href="https://www.facebook.com/" class="active">1</a>
-			<a href="https://www.facebook.com/">2</a>
-			<a href="https://www.facebook.com/">3</a>
-			<a href="https://www.facebook.com/">4</a>
-			<a href="https://www.facebook.com/">5</a>
-			<a href="https://www.facebook.com/">6</a>
-			<a href="https://www.facebook.com/">></a>
 	</div>
-	<button onclick="pages"></button>
-	<div id="myDIV"></div>
-</div>
-<script>
-function pages {
-	var element = document.getElementById("myDIV")
-	element.classlist.toggle("layoutmenu")
-}
-</script>
+	<h2 class="title"> Tables </h2>
+	<br>
+	<a class="board-table" href=https://pms.riansoft.net/rian_calendar.php target="_blank"> Dashboard</a> <a
+		class="table3"> / Tables </a>
+	<div class="border"> DataTable is a third party Plugin that is used to generate the demo table below. For more
+		information about DataTables, please visit the <a class="table4"
+			href=https://pms.riansoft.net/rian_calendar.php> official DataTables Documentation</a></div>
+	<div class="datatable-example">
+		<div class="flex-container head-table">
+			<img src="image/table.png" alt class="icon-table ">
+			<div class="text-datatables"> DataTable Example</div>
+		</div>
+		<div class="flex-container align-item">
+			<div class="flex-container">
+				<select class="order-box"> <img src="image/downarrown.png" alt class="icon-arrow">
+					<option value selected="selected"> 10 </options>
+				</select>
+			</div>
+			<div class="text-entries"> entries per page</div>
+			<input type="text" class="searchbox" placeholder="Search...">
+		</div>
+		<table class="tableboard">
+			<div class="flex-container">
+				<tr>
+					<th class="tableboard th" style="width:19.5%">Name</th>
+					<th style="width:19.5%">Postion</th>
+					<th style="width:14.5%">Office</th>
+					<th style="width:7.5%">Age</th>
+					<th style="width:15%">Start date</th>
+					<th style="width:13%">Salary</th>
+				</tr>
+			</div>
+			<tr>
+				<td>Jackson Bradshaw</td>
+				<td>Director</td>
+				<td>New Yord</td>
+				<td>65</td>
+				<td>2008/09/26</td>
+				<td>$645,750</td>
+			</tr>
+			<tr>
+				<td>Charder Marshall</td>
+				<td>Regional Director</td>
+				<td>San Francisco</td>
+				<td>36</td>
+				<td>2008/10/16</td>
+				<td>$470,600</td>
+			</tr>
+			<tr>
+				<td>Gavin Cortez</td>
+				<td>Team Leader</td>
+				<td>San Francisco</td>
+				<td>28</td>
+				<td>2008/10/26</td>
+				<td>$235,500</td>
+			</tr>
+			<tr>
+				<td>Shad Deckter</td>
+				<td>Regional Director</td>
+				<td>Edinburgh</td>
+				<td>51</td>
+				<td>2008/11/13</td>
+				<td>$183,000</td>
+			</tr>
+			<tr>
+				<td>Airi Satou</td>
+				<td>Accountant</td>
+				<td>Tokyo</td>
+				<td>33</td>
+				<td>2008/11/28</td>
+				<td>$162,700</td>
+			</tr>
+			<tr>
+				<td>Timothy Mooney</td>
+				<td>Office Manager</td>
+				<td>London</td>
+				<td>37</td>
+				<td>2008/12/11</td>
+				<td>$136,200</td>
+			</tr>
+			<tr>
+				<td>Sonya Frost</td>
+				<td>Software Engineer</td>
+				<td>Edinburgh</td>
+				<td>23</td>
+				<td>2008/12/13</td>
+				<td>$103,600</td>
+			</tr>
+			<tr>
+				<td>Howard Hatfield</td>
+				<td>Office Manager</td>
+				<td>San Francisco</td>
+				<td>51</td>
+				<td>2008/12/16</td>
+				<td>$164,500</td>
+			</tr>
+			<tr>
+				<td>Jena Gaines</td>
+				<td>Office Manager</td>
+				<td>London</td>
+				<td>30</td>
+				<td>2008/12/19</td>
+				<td>$90,560</td>
+			</tr>
+			<tr>
+				<td>Ashton Cox</td>
+				<td>Junior Technical Author</td>
+				<td>San Francisco</td>
+				<td>66</td>
+				<td>2009/01/12</td>
+				<td>$86,000</td>
+			</tr>
+
+		</table>
+		<div class="flex-container">
+			<div class="textfinal"> Showing 1-10 of 57 entries </div>
+			<div class="pagination">
+				<a href="https://www.facebook.com/" class="active">1</a>
+				<a href="https://www.facebook.com/">2</a>
+				<a href="https://www.facebook.com/">3</a>
+				<a href="https://www.facebook.com/">4</a>
+				<a href="https://www.facebook.com/">5</a>
+				<a href="https://www.facebook.com/">6</a>
+				<a href="https://www.facebook.com/">></a>
+			</div>
+			
+		</div>
+
 
 </body>
+
 </html>
