@@ -1,0 +1,399 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.left-page {
+    background-color: #212529;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 223px;
+    z-index: 2;
+}
+
+.logo-left-page {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.core {
+    color: #595c5f;
+    font-size: 12px;
+    margin-left: 14px;
+    margin-top: 54px;
+    font-weight: bold;
+}
+
+.dash-board {
+    color: #595c5f;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 37px;
+}
+
+.icon1 {
+    width: 15px;
+    height: 15px;
+    margin-left: 16px;
+    margin-top: 37px;
+}
+
+.icon2 {
+    width: 8px;
+    height: 13px;
+    margin-left: 100px;
+    margin-top: 37px;
+}
+
+.icon3 {
+    width: 8px;
+    height: 13px;
+    margin-left: 110px;
+    margin-top: 37px;
+}
+
+.aspan {
+    color: white;
+    text-decoration: none;
+}
+
+.interface {
+    color: #595c5f;
+    font-size: 12px;
+    margin-left: 14px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.lay-out {
+    color: #595c5f;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 37px;
+}
+
+.pages {
+    color: #595c5f;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 37px;
+}
+
+.addons {
+    color: #595c5f;
+    font-size: 12px;
+    margin-left: 14px;
+    margin-top: 49px;
+    font-weight: bold;
+}
+
+.charts {
+    color: #595c5f;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 35px;
+}
+
+.tables {
+    color: #595c5f;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 35px;
+}
+
+.head-bar1 {
+    background-color: #212529;
+    height: 56px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1;
+    padding-left: 224px;
+    justify-content: space-between;
+}
+
+.head-bar1-left {
+    background-color: none;
+}
+
+.icon-list {
+    margin-top: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: white;
+    opacity: 0.5;
+}
+
+.head-bar1-right {
+    background-color: blue;
+}
+
+.relative {
+    position: relative;
+}
+
+.form-control {
+    display: inline-block;
+    border: 1px solid grey;
+    width: 208px;
+    height: 37px;
+    text-align: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: grey;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.buttonsearch {
+    background-color: dodgerblue;
+    top: 0;
+    bottom: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid dodgerblue;
+    height: 37px;
+    width: 43px;
+    margin-top: 10px;
+}
+
+.icon-head-bar1 {
+    display: inline-block;
+    height: 18px;
+    color: white;
+    width: 19px;
+    background-color: dodgerblue;
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.icon-profile {
+    display: inline-block;
+    margin-top: 19px;
+    height: 20px;
+    left: 0px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.tamgiac {
+    display: inline-block;
+    height: 9px;
+    weight: auto;
+    margin-left: 6px;
+    margin-right: 30px;
+    margin-top: 24px;
+}
+
+.title {
+    display: inline-block;
+    margin-top: 95px;
+    margin-left: 246px;
+    font-size: 40px;
+    color: #0f100e;
+}
+
+.board-table {
+
+    margin-left: 246px;
+    margin-top: 25px;
+
+}
+
+.table3 {
+    display: inline-block;
+    color: grey;
+    margin-top: 25px
+}
+
+.border {
+    border: 1px solid #ededed;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    height: 60px;
+    width: 1645px;
+    color: #404146;
+    font-size: 15px;
+    margin-top: 41px;
+    margin-left: 246px;
+    padding: 21px 20px;
+}
+
+.table4 {
+    display: inline-block;
+    color: #1e90ff;
+}
+
+.datatable-example {
+    border: 1px solid #ededed;
+    margin: auto;
+    border-radius: 5px;
+    height: 602px;
+    width: 1645px;
+    margin-top: 27px;
+    margin-left: 246px;
+}
+
+.head-table {
+    border-bottom: 1px solid #ededed;
+    background-color: #f7f7f7;
+    height: 44px;
+    color: black;
+    font-size: 15px;
+    padding: 15px 11px;
+    padding-left: 11px;
+
+}
+
+.icon-table {
+    height: 17px;
+    width: 14px;
+    margin-left: 17px;
+    margin-right: 10px;
+}
+
+.order-box {
+    border: 1px solid #aeaeb0;
+    height: 37px;
+    width: 71px;
+    color: black;
+    font-size: 15px;
+    margin-left: 19px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 16px;
+    justify-content: space-arrow;
+}
+
+.icon-arrow {
+    height: 17px;
+    width: 14px;
+    margin-left: 8px;
+    padding: 8px;
+}
+
+.text-entries {
+    margin-left: 10px;
+    color: black;
+    font-size: 16px;
+    margin-top: 16px;
+
+}
+
+.align-item {
+    align-items: center;
+}
+
+.searchbox {
+    width: 207px;
+    height: 37px;
+    margin-left: auto;
+    margin-right: 17px;
+    border: 1px solid #aeaeb0;
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+    margin-top: 16px;
+}
+
+.tableboard {
+    border-collapse: collapse;
+    width: 98%;
+    border: 1px solid #ededed;
+    padding: 8px;
+    margin-left: 19px;
+    margin-top: 19px;
+}
+
+.tableboard th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #ededed;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.tableboard td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border: 1px solid #ededed;
+    padding: 8px;
+    color: #404146;
+}
+
+.textfinal {
+    margin-top: 32px;
+    margin-left: 19px;
+    color: black;
+    padding: 8px;
+}
+
+.pagination {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 17px;
+}
+
+.pagination a {
+    color: dodgerblue;
+    padding: 8px 12px;
+    text-decoration: none;
+    margin-left: auto;
+    border: 1px solid #ededed;
+    font-size: 15px;
+    float: left;
+    margin-top: 32px;
+    right: auto;
+}
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: white;
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.child-memu {
+    display: none;
+}
+
+.layoutmenu {
+    display: block;
+}
