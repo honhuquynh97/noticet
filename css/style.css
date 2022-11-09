@@ -67,10 +67,9 @@ body, html {
 .checkbox {
 	display: block;
 	position: relative;
-	height: 22px;
-	width: 22px;
-	border: 1px solid #d9d9d9;
-	border-radius: 3px;
+	height: 20px;
+	width: 19px;
+	border: 1px solid grey;
 	cursor: pointer;
 	font-size: 16px;
 	margin-left: 67px;
@@ -78,6 +77,7 @@ body, html {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	margin-top: 50px;
 }
 .checkbox input {
 	position: absolute;
@@ -93,6 +93,7 @@ body, html {
 	height: 25px;
 	width: 25px;
 	background-color: #eee;
+	
 }
 .checkbox:hover input ~ .checkmark {
 	background-color: #ccc;
@@ -113,10 +114,11 @@ body, html {
 	top: 4px;
 	width: 5px;
 	height: 10px;
-	border: 2px solid white;
+	border: solid white;
+	border-width: 0 3px 3px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
-	transform: rotate(-45deg);
+	transform: rotate(45deg);
 	opacity: 0;
 }
 .text1 {
@@ -135,63 +137,7 @@ body, html {
 	position: relative;
 	padding: 26px 38px 36px 18px;
 }
-.a-center {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-.nq-row {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-.nq-check-all .nq-policy-item .nq-lbl {
-	margin-right: 6px;
-}
-.nq-lbl {
-	position: relative;
-}
-button, a, .nq-link {
-	cursor: pointer;
-}
-label {
-	cursor: default;
-}
-input[type="checkbox"] {
-    cursor: pointer;
-}
-input[Attributes Style] {
-    display: none;
-}
-input[type="checkbox" i] {
-    background-color: initial;
-    cursor: default;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 3px 3px 3px 4px;
-    padding: initial;
-    border: initial;
-}
-.nq-checkbox {
-    position: relative;
-    height: 22px;
-    width: 22px;
-    display: block;
-    border-radius: 3px;
-    border: 1px solid #d9d9d9;
-    cursor: pointer;
-}
-.mr-5 {
-    margin-right: 5px !important;
-}
-.checkmark4 {
-	margin-left: 18px;
-	color: #191919;
-	font-size: 15px;
-	margin-top: 27px;
-}
+
 .scrollbox {
 	display: block;
 	background-color: #f8f8f8;
@@ -205,24 +151,7 @@ input[type="checkbox" i] {
 	color: #757575;
 	padding: 25px;
 }
-.checkmark5 {
-	margin-left: 18px;
-	color: #191919;
-	font-size: 15px;
-	margin-top: 25px;
-}
-.checkmark6 {
-	margin-left: 18px;
-	color: #191919;
-	font-size: 15px;
-	margin-top: 52px;
-}
-.checkmark7 {
-	margin-left: 18px;
-	color: #191919;
-	font-size: 15px;
-	margin-top: 52px;
-}
+
 .button1 {
 	width: 456px;
 	height: 55px;
@@ -237,21 +166,3 @@ input[type="checkbox" i] {
 	font-weight: bold;
 }
 
-.nq-policy-item .nq-item-head .nq-uparrow {
-	position: absolute;
-	top: 22px;
-	right: 8px;
-	padding: 4px 10px;
-	cursor: pointer;
-	transform: rotate(90deg);
-}
-.nq-policy-list .nq-policy-item.active .nq-uparrow {
-	transform: rotate(-90deg);
-}
-.nq-policy-item .nq-item-head .nq-uparrow img {
-	width: 7px;
-	height: auto;
-}
-.nq-policy-item: active {
-	transform: rotate(90deg);
-}
