@@ -53,16 +53,6 @@ body, html {
 	margin-top: 43px;
 	margin-left: 66px;
 }
-.container:hover input ~ .checkmark {
-	background-color: #fff;
-}
-.container input:checked ~ .checkmark {
-	background-color: #2196f3;
-}
-
-.container input:checked ~ .checkmark:after {
-	display: block;
-}
 
 .checkbox {
 	display: block;
@@ -93,11 +83,11 @@ body, html {
 	width: 25px;
 	border: 1px solid ;
 	border-radius: 5px;
-	background-color: #eee;
+	background-color: red;
 	
 }
 .checkbox:hover input ~ .checkmark {
-	background-color: #ccc;
+	background-color: white;
 }
 .checkbox input:checked ~ .checkmark {
 	background-color: #001976;
@@ -121,7 +111,7 @@ body, html {
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
-	opacity: 0;
+	
 	
 }
 .text1 {
